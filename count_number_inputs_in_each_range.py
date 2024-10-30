@@ -1,4 +1,4 @@
-def main():  #
+def main():  
     counts = {      # Initialize counts for each range
         "1-10": 0,
         "11-20": 0,
@@ -11,7 +11,7 @@ def main():  #
         try:   # To catch the potential errors
             number = int(input("Enter a number between 1 and 50 (or a number outside the range to quit): "))
 
-            # Incerement the value by 1 if the number is within that range
+            # Increment the value by 1 if the number is within that range
             if 1 <= number <= 10:
                 counts["1-10"] += 1
             elif 11 <= number <= 20:
@@ -32,6 +32,10 @@ def main():  #
     print("\nInput Summary:")
     for range_label in counts: 
         print(f"{range_label} = {counts[range_label]}") # Label = value 
+
+if __name__ == "__main__":  # To check if the script is running directly
+    main()
+
 
 
 
